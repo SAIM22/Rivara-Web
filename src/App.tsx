@@ -9,7 +9,7 @@ import WhyWeAreHere from './components/WhyWeAreHere';
 
 function App() {
   return (
-    <Router basename="/Rivara-Web">
+    <Router>
       <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white">
         <Navbar />
         <main>
