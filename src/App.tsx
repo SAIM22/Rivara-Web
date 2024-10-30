@@ -1,5 +1,4 @@
-import React from 'react';
-import { Brain, Target, Rocket, BarChart3, ArrowRight, Bot, Network, Cpu, Building2 } from 'lucide-react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -10,17 +9,19 @@ import WhyWeAreHere from './components/WhyWeAreHere';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <WhyWeAreHere />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router basename="/Rivara-Web">
+      <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <WhyWeAreHere />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
