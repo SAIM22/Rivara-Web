@@ -12,7 +12,7 @@ export default function Hero() {
               Transforming Industries Through AI
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
-              Leading the transformation of global industries into fully autonomous, AI-powered ecosystems, where businesses and government operate at peak efficiency with minimal human intervention.
+              Leading the transformation of global industries into fully autonomous and AI-powered ecosystems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 md:text-lg">

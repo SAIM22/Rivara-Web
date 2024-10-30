@@ -38,7 +38,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>ashadur@rivaraconsulting.co.uk</li>
+              <li>sales@rivaraconsulting.co.uk</li>
             </ul>
           </div>
         </div>
