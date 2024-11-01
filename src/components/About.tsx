@@ -1,4 +1,3 @@
-import React from 'react';
 import { Bot, Network } from 'lucide-react';
 
 export default function About() {
