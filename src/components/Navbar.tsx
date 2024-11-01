@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="relative h-16 flex items-center">
               <div className="relative">
                 <Link to="/" className="flex items-center gap-3">
-                  <span className="font-orbitron text-4xl font-medium tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-r from-white to-white drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+                  <span className="font-orbitron text-4xl font-medium tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-r from-white to-white drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">
                     RIVARA
                   </span>
                   <span className="text-blue-400 text-[2.2rem] tracking-wider uppercase font-light drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">

@@ -56,7 +56,7 @@ export default function Services() {
                 className="bg-slate-700/30 p-6 rounded-xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="text-blue-500 mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 whitespace-nowrap">{service.title}</h3>
                 <p className="text-gray-300">{service.description}</p>
               </div>
             ))}
@@ -70,7 +70,7 @@ export default function Services() {
                 className="bg-slate-700/30 p-6 rounded-xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="text-blue-500 mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 whitespace-nowrap">{service.title}</h3>
                 <p className="text-gray-300">{service.description}</p>
               </div>
             ))}
