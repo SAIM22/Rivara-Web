@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import logoImage from '../../public/images/logo.png'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -16,12 +17,11 @@ export default function Navbar() {
             <div className="relative h-16 flex items-center">
               <div className="relative">
                 <Link to="/" className="flex items-center gap-2">
-                  <span className="font-orbitron text-2xl md:text-4xl font-medium tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-r from-white to-white drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">
-                    RIVARA
-                  </span>
-                  <span className="text-blue-400 text-lg md:text-[2.2rem] tracking-wider uppercase font-light drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
-                    Consulting
-                  </span>
+                  <img 
+                    src={logoImage} 
+                    alt="Rivara Consulting Logo" 
+                    className="h-16" 
+                  />
                 </Link>
               </div>
             </div>
