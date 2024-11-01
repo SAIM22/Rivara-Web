@@ -1,26 +1,25 @@
-import React from 'react';
 import { Target, Rocket, Cpu, BarChart3, Settings, GraduationCap, Building2 } from 'lucide-react';
 
 export default function Services() {
   const services = [
     {
       icon: <Target className="h-8 w-8" />,
-      title: "AI Strategy & Roadmap",
+      title: "AI Strategy & Consulting",
       description: "Develop comprehensive AI strategies aligned with your business objectives and create detailed implementation roadmaps."
     },
     {
       icon: <Rocket className="h-8 w-8" />,
-      title: "AI Pilot Testing",
+      title: "Data Engineering",
       description: "Validate AI solutions through controlled pilot programs, ensuring effectiveness before full-scale deployment."
     },
     {
       icon: <Cpu className="h-8 w-8" />,
-      title: "AI Implementation",
+      title: "Machine Learning",
       description: "End-to-end AI solution deployment, including integration with existing systems and staff training."
     },
     {
       icon: <BarChart3 className="h-8 w-8" />,
-      title: "AI Results as a Service",
+      title: "AI Implementation",
       description: "Ongoing AI solution management and optimization to ensure continuous improvement and ROI."
     },
     {
@@ -48,17 +47,34 @@ export default function Services() {
           <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-slate-700/30 p-6 rounded-xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-2"
-            >
-              <div className="text-blue-500 mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-300">{service.description}</p>
-            </div>
-          ))}
+        <div className="flex flex-col gap-6 max-w-6xl mx-auto px-4">
+          {/* Top row - 4 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.slice(0, 4).map((service, index) => (
+              <div 
+                key={index} 
+                className="bg-slate-700/30 p-6 rounded-xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-2"
+              >
+                <div className="text-blue-500 mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <p className="text-gray-300">{service.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom row - 3 cards centered */}
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:w-3/4 mx-auto">
+            {services.slice(4, 7).map((service, index) => (
+              <div 
+                key={index} 
+                className="bg-slate-700/30 p-6 rounded-xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-2"
+              >
+                <div className="text-blue-500 mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <p className="text-gray-300">{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

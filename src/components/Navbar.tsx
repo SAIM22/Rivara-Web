@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -13,15 +15,14 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="relative h-16 flex items-center">
               <div className="relative">
-                <span className="text-[28px] font-light tracking-[0.3em] font-['Montserrat']">
-                  <span className="text-white">RIVARA</span>
-                </span>
-                <div className="absolute -top-3 left-[calc(33.33%)] right-[calc(50%)] flex justify-center overflow-visible">
-                  <div className="w-full h-6 border-t-[2.5px] border-blue-400 rounded-t-full transform -translate-y-1 opacity-90"></div>
-                </div>
-                <div className="-mt-2 ml-[calc(33.33%)]">
-                  <span className="text-[9px] text-blue-400 tracking-[0.4em] font-['Montserrat'] font-light uppercase">CONSULTING</span>
-                </div>
+                <Link to="/" className="flex items-center gap-3">
+                  <span className="font-orbitron text-4xl font-medium tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-r from-white to-white drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+                    RIVARA
+                  </span>
+                  <span className="text-blue-400 text-[2.2rem] tracking-wider uppercase font-light drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
+                    Consulting
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
@@ -30,7 +31,14 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-4">
               <a href="#home" className="hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Home</a>
               <a href="#about" className="hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About</a>
-              <a href="#services" className="hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+              <ScrollLink 
+                to="services" 
+                smooth={true} 
+                duration={500} 
+                className="cursor-pointer hover:text-blue-400 transition-colors"
+              >
+                Services
+              </ScrollLink>
               <a href="#contact" className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md text-sm font-medium">Contact Us</a>
             </div>
           </div>
