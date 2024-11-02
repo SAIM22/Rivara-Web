@@ -16,7 +16,7 @@ export default function About() {
               <h3 className="text-2xl font-semibold">Products Division</h3>
             </div>
             <p className="text-gray-300">
-              Our products division focuses on developing cutting-edge AI-powered applications designed for wide adoption. We create scalable solutions that transform how businesses operate, making AI accessible and practical for organizations of all sizes.
+              Our products division focuses on developing cutting-edge AI-powered applications designed for wide adoption. We create scalable solutions that transform how businesses operate, making AI accessible and practical for organisations of all sizes.
             </p>
           </div>
           
@@ -26,7 +26,7 @@ export default function About() {
               <h3 className="text-2xl font-semibold">Services Division</h3>
             </div>
             <p className="text-gray-300">
-              Our services division provides expert consulting to both public and private sectors. We specialize in research and AI implementation, helping organizations navigate their digital transformation journey with confidence and precision.
+              Our services division provides expert consulting to both public and private sectors. We specialise in research and AI implementation, helping organisations navigate their digital transformation journey with confidence and precision.
             </p>
           </div>
         </div>

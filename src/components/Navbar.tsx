@@ -12,15 +12,15 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full bg-slate-900/90 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-0">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <div className="relative h-16 flex items-center">
+            <div className="relative h-20 flex items-center">
               <div className="relative pl-0">
                 <Link to="/" className="flex items-center gap-2">
                   <img 
                     src={logoImage} 
                     alt="Rivara Consulting Logo" 
-                    className="h-16" 
+                    className="h-20 py-2"
                   />
                 </Link>
               </div>
