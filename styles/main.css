@@ -1,0 +1,11 @@
+.hero-section {
+  padding-top: 140px; /* Increased from 120px to 140px */
+  margin-top: 30px; /* Increased from 20px to 30px */
+}
+
+/* If you're using a mobile-specific media query, you could also adjust it there */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 120px; /* Increased from 100px to 120px for mobile */
+  }
+} 

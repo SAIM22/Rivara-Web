@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-16 md:pt-20 pb-16 md:pb-32 px-4">
+    <section id="home" className="pt-24 md:pt-20 pb-16 md:pb-32 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 blur-3xl opacity-10 rounded-3xl"></div>
