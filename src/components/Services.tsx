@@ -4,22 +4,22 @@ export default function Services() {
   const services = [
     {
       icon: <Target className="h-8 w-8" />,
-      title: "AI Strategy & Consulting",
+      title: "AI Strategy & Roadmap",
       description: "Develop comprehensive AI strategies aligned with your business objectives and create detailed implementation roadmaps."
     },
     {
       icon: <Rocket className="h-8 w-8" />,
-      title: "Data Engineering",
+      title: "AI Pilot Testing",
       description: "Validate AI solutions through controlled pilot programmes, ensuring effectiveness before full-scale deployment."
     },
     {
       icon: <Cpu className="h-8 w-8" />,
-      title: "Machine Learning",
+      title: "AI Implementation",
       description: "End-to-end AI solution deployment, including integration with existing systems and staff training."
     },
     {
       icon: <BarChart3 className="h-8 w-8" />,
-      title: "AI Implementation",
+      title: "AI Results as a Service",
       description: "Ongoing AI solution management and optimisation to ensure continuous improvement and ROI."
     },
     {

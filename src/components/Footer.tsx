@@ -22,19 +22,7 @@ export default function Footer() {
             <ul className="space-y-1 md:space-y-2">
               <li><a href="#home" className="text-sm md:text-base text-gray-400 hover:text-blue-500">Home</a></li>
               <li><a href="#about" className="text-sm md:text-base text-gray-400 hover:text-blue-500">About</a></li>
-              <li><a href="#services" className="text-sm md:text-base text-gray-400 hover:text-blue-500">Services</a></li>
               <li><a href="#contact" className="text-sm md:text-base text-gray-400 hover:text-blue-500">Contact</a></li>
-            </ul>
-          </div>
-          
-          {/* Services */}
-          <div className="space-y-2">
-            <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-4">Services</h3>
-            <ul className="space-y-1 md:space-y-2">
-              <li><a href="#" className="text-sm md:text-base text-gray-400 hover:text-blue-500">AI Strategy</a></li>
-              <li><a href="#" className="text-sm md:text-base text-gray-400 hover:text-blue-500">Pilot Testing</a></li>
-              <li><a href="#" className="text-sm md:text-base text-gray-400 hover:text-blue-500">Implementation</a></li>
-              <li><a href="#" className="text-sm md:text-base text-gray-400 hover:text-blue-500">AI Results</a></li>
             </ul>
           </div>
           
